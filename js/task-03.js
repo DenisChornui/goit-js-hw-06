@@ -1,7 +1,4 @@
-// Використовуй масив об'єктів images для створення елементів <img>, вкладених в <li>. Для створення розмітки використовуй шаблонні рядки і метод insertAdjacentHTML().
 
-// Усі елементи галереї повинні додаватися в DOM за одну операцію додавання.
-// Додай мінімальне оформлення галереї флексбоксами або грідами через CSS класи.
 
 const images = [
   {
@@ -19,7 +16,7 @@ const images = [
 ];
 
 const list = document.querySelector(".js-gallery")
-// console.log(list)
+
 
 function createMarkup(arr) {
 const markup = arr.map(({url, alt}) => 
@@ -32,7 +29,6 @@ list.style.listStyle = "none";
 list.style.display = "flex";
 list.style.gap = "20px"
 
-console.log(markup)
 }
 
 createMarkup(images);
